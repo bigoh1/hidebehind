@@ -40,6 +40,35 @@ def set_lsb(n: int, b: int):
     return (n & ~1) | b
 
 
+def set_second_lsb(n: int, b: int):
+    """See also set_lsb()"""
+    return (n & ~2) | (b << 1)
+
+
 def get_lsb(n: int) -> int:
     """Returns the least significant bit of n"""
     return n & 1
+
+
+def get_second_lsb(n: int) -> int:
+    """See also get_lsb()"""
+    return (n & 2) >> 1
+
+
+class Byte:
+    def __init__(self):
+        self.power = 7
+        self.val = 0
+
+    def value(self):
+        return self.val
+
+    def append(self, b: int):
+        self.val |= (b << self.power)
+        self.power -= 1
+
+    def is_full(self) -> bool:
+        return self.power < 0
+
+    def clear(self):
+        self.__init__()

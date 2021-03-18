@@ -15,7 +15,6 @@ def main():
 
     if args.mode[0] in ('embed', 'put'):
         cover_file = args.cover
-        secret_contents = None
         output_file = args.output
 
         if args.secret == '-' and args.cover == '-':
