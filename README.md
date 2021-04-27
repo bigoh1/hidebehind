@@ -16,8 +16,6 @@ Installation
 ============
 ```bash
 $ python3 -m pip install hidebehind
-# Create an alias for it. Note, if you use zsh, change .bashrc to .zshrc 
-$ cp ~/.bashrc ~/.bashrc.bak && echo "alias hide='python3 -m hidebehind'" >> ~/.bashrc && source ~/.bashrc 
 ```
 
 Quick start examples

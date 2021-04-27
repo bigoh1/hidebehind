@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="hidebehind",
-    version="0.0.1",
+    version="0.0.2",
     author="multifrench",
     author_email="multifrench@protonmail.com",
     description="A steganography library",
@@ -27,4 +27,9 @@ setuptools.setup(
     packages=setuptools.find_packages(exclude=['docs', 'tests']),
     install_requires=['numpy', 'Pillow'],
     python_requires=">=3.9",
+    entry_points={
+            'console_scripts': [
+                'hide = hidebehind.main:main'
+            ]
+        }
 )
