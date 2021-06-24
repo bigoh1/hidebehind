@@ -89,7 +89,7 @@ Do you see the difference?
 ![A square](https://github.com/multifrench/hidebehind/blob/main/img/square.png)
 ![The square with embedded message in it](https://github.com/multifrench/hidebehind/blob/main/img/square-embedded.png)
 
-Nor do I. But there is a secret embedded in it!
+Neither do I. But there is a secret embedded in it!
 > Stay hungry. Stay foolish
 
 Basically, the idea behind it is that **the human eye is very insensitive**. It can't detect difference in less than 1%.  
